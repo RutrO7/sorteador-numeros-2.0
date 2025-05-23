@@ -74,4 +74,4 @@ Sinta-se à vontade para usar e modificar!
 ## 👨‍💻 Autor
 
 Desenvolvido por **Artur** 🚀  
-[🔗 GitHub](https://github.com/seu-usuario)
+[🔗 GitHub](https://github.com/RutrO7)
