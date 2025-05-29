@@ -13,15 +13,16 @@ function sortear() {
 
   let sorteados = [];
   let numero;
+  // Corrigir a validação do intervalo e quantidade ANTES do loop
+  if (quantidade > (ate - de + 1)) {
+    alert(
+      "Quantidade inválida\nA quantidade de números deve ser menor ou igual ao intervalo entre os números."
+    );
+    reiniciar();
+    return;
+  }
   for (let i = 0; i < quantidade; i++) {
     numero = obterNumeroAleatorio(de, ate);
-    if (quantidade > (de - ate + 1)) {
-      alert(
-        "Quantidade inválida\nA quantidade de números deve ser menor ou igual ao intervalo entre os números."
-      );
-      reiniciar();
-      return;
-    }
     // quero criar um loop while até que minhas repetições não sejam iguais, usando o includes para isso;
     while (sorteados.includes(numero)) {
       numero = obterNumeroAleatorio(de, ate);
